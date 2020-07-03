@@ -79,6 +79,16 @@ html(lang="en")
 
 
     include template/_footer
+
+    .popup
+      .popup__close
+        span.popup__close
+      form.popup-form(action="")
+        input.popup-input(type="text" placeholder="ФИО")
+        input.popup-input(type="text" placeholder="Организация")
+        input.popup-input(type="text" placeholder="Номер телефона")
+        button.popup-btn(type="button") Заказать звонок
+
     script(src="js/main.js")
     script(src="js/header_script.js")
   

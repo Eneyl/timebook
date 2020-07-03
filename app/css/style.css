@@ -750,6 +750,96 @@ body {
   max-width: 130px;
 }
 
+.popup {
+  min-width: 530px;
+  background: #ffffff;
+  border: 2px solid #051c83;
+  padding: 20px;
+  padding-bottom: 60px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  display: none;
+}
+
+.popup_show {
+  display: block;
+}
+
+.popup__close {
+  height: 25px;
+  width: 25px;
+  right: 10px;
+  top: 5px;
+  position: absolute;
+  cursor: pointer;
+}
+
+.popup__close span {
+  height: 2px;
+  width: 25px;
+  display: block;
+  background: #8e8e8e;
+  -webkit-transform: rotate(45deg) translate(14px);
+      -ms-transform: rotate(45deg) translate(14px);
+          transform: rotate(45deg) translate(14px);
+}
+
+.popup__close span::after {
+  content: '';
+  display: block;
+  height: 2px;
+  width: 100%;
+  background: #8e8e8e;
+  -webkit-transform: rotate(90deg);
+      -ms-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+
+.popup .popup-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.popup .popup-input {
+  padding: 0;
+  border: none;
+  font: inherit;
+  color: inherit;
+  background-color: transparent;
+  outline: none;
+  margin-top: 34px;
+  padding: 10px 10px;
+  border: 1px solid #051c83;
+  color: #8e8e8e;
+  font-size: 16px;
+}
+
+.popup .popup-btn {
+  padding: 0;
+  border: none;
+  font: inherit;
+  color: inherit;
+  background-color: transparent;
+  cursor: pointer;
+  outline: none;
+  margin-top: 25px;
+  font-size: 24px;
+  color: #ffffff;
+  background: #87afcb;
+  border-radius: 15px;
+  text-transform: uppercase;
+  padding: 5px;
+}
+
 .company-info__body {
   background: url("../img/about-company/Группа 1.png") no-repeat;
 }

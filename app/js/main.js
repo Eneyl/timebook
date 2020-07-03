@@ -37,5 +37,16 @@ window.addEventListener('DOMContentLoaded', ()=>{
 
   })
 
- 
+  let getCallBtn = document.querySelector('.main-screen__get-call'),
+      popup = document.querySelector('.popup'),
+      popupClose = document.querySelector('.popup__close')
+
+  getCallBtn.addEventListener('click', ()=>{
+    popup.classList.add('popup_show')
+  })
+
+  popupClose.addEventListener('click', ()=>{
+    popup.classList.remove('popup_show')
+  })
+  
 })
