@@ -763,6 +763,7 @@ body {
       -ms-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   display: none;
+  z-index: 1000;
 }
 
 .popup_show {
@@ -1344,6 +1345,9 @@ body {
     display: none;
   }
   .login-in {
+    min-width: 100vw;
+  }
+  .popup {
     min-width: 100vw;
   }
 }
