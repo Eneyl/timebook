@@ -1,0 +1,30 @@
+@import 'vars';
+@import 'mixins';
+@import 'libs';
+@import 'reset-style';
+@import 'fonts';
+
+@import 'template/header';
+
+
+body{
+  font-family: 'PT Sans', sans-serif;
+}
+.wrapper {
+  max-width: 1460px;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin: 0 auto;
+}
+
+
+@import 'template/index';
+@import 'template/about-company';
+@import 'template/enter-account';
+@import 'template/footer';
+    
+@import 'media.scss';
+
+
+
+

@@ -1,0 +1,52 @@
+.footer {
+
+  &__body {
+    background: $gradient;
+  }
+
+  &__inner {
+    position: relative;
+    
+  }
+
+  &__logo {
+    position: absolute;
+    left: 30px;
+    top: -10px;
+  }
+
+  &__info {
+    padding-top: 56px;
+    padding-left: 212px;
+    padding-bottom: 41px;
+    font-size: 24px;
+    color: #ffffff;
+    
+    a{
+      color: #ffffff;
+      &:hover{
+        text-decoration: underline;
+      }
+      text-decoration: none;
+    }
+  }
+
+  &__phone {
+    
+    
+  }
+
+  &__contact {
+    padding-top: 35px;
+
+  }
+
+  &__social {
+    padding-top: 27px;
+    a{
+      
+      margin-right: 28px;
+    }
+  }
+}
+

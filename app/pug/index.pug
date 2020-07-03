@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+html(lang="en")
+  head
+    include template/_head
+  body
+    include template/_header
+
+    main.main
+      section.main-screen
+        .main-screen__body
+          .wrapper
+            .main-screen__inner
+              .main-screen__text
+                h1.main-screen__title timebook - это сервис для учета и управления рабочим временем
+                div.main-screen__descr Таймбук представляет из себя инновационный инструмент автоматизации управления рабочим временем персонала. #[br] Полноценная WFM-система.
+                button.main-screen__get-call(type="button") Заказать звонок
+              .main-screen__image
+                img(src="img/43cbab8a81ff9e90ade173dfffffe101.png", alt="")
+      
+      section.capability
+        .wrapper
+          .capability__inner
+            h2.capability__title Возможности timebook
+            .capability__list
+              .capability__list-item
+                .capability__list-icon
+                  img(src="img/icons/63a9d1861203e352aebd91bff41786d8.png", alt="")
+                .capability__item-text
+                  .capability__item-title ПЛАНИРУЙТЕ
+                  .capability__descr Легко планируйте графики работы персонала
+
+              .capability__list-item
+                .capability__list-icon
+                  img(src="img/icons/87349ba234b8dd17a902fb396bcf0edc.png", alt="")
+                .capability__item-text
+                  .capability__item-title УЧИТЫВАЙТЕ
+                  .capability__descr Точно фиксируйте рабочее время при помощи биометрии
+
+              .capability__list-item
+                .capability__list-icon
+                  img(src="img/icons/a9d897cc15873dff42576c12f752ee4b.png", alt="")
+                .capability__item-text
+                  .capability__item-title ТАБЕЛИРУЙТЕ
+                  .capability__descr Автоматически формируйте зарплатные табели
+            
+          .capability__tab-body
+            ul.capability__tab-switches
+              li.capability__tab-title.capability__tab-title_active  ПЛАНИРОВАНИЕ ГРАФИКОВ РАБОТ
+              li.capability__tab-title БИОМЕТРИЧЕСКИЙ УЧЕТ РАБОЧЕГО ВРЕМЕНИ
+              li.capability__tab-title АВТОМАТИЧЕСКИЙ ТАБЕЛЬ И АНАЛИТИКА
+              li.capability__tab-title УПРАВЛЕНИЕ ВНЕШНИМ ПЕРСОНАЛОМ
+            .capability__tab-content
+              img(src="img/tabs-content/планирование скрин.png", alt="")
+            .capability__tab-content
+              img(src="img/tabs-content/биометрический_учёт.png", alt="")
+            .capability__tab-content
+              img(src="img/tabs-content/автоматический табель.png", alt="")
+            .capability__tab-content
+              img(src="img/tabs-content/управление персоналом.png", alt="")
+      
+      section.our-clients
+        .wrapper
+          .our-clients__inner
+            h2.our-clients__title НАШИ КЛИЕНТЫ
+            .our-clients__list
+              .our-clients__list-item
+                img(src="img/clients/873977cd9ab2845ae833ad378528f7bc.png", alt="")
+              .our-clients__list-item
+                img(src="img/clients/1558422555_verniy.jpg", alt="")
+              .our-clients__list-item
+                img(src="img/clients/d1888745f8f74ba159a729bcc3fa007d.png", alt="")
+              .our-clients__list-item
+                img(src="img/clients/ea237368f67fe775b85f4ea831a7d63e.png", alt="")
+              .our-clients__list-item
+                img(src="img/clients/f9077eb8a01bceb19171ee0071cf1b1f.png", alt="")
+
+
+
+
+
+    include template/_footer
+    script(src="js/main.js")
+    script(src="js/header_script.js")
+  

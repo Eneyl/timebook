@@ -1,0 +1,87 @@
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  &__body {
+    min-height: 130px;
+    background: $gradient;
+    display: flex;
+    align-items: center;
+    position: relative;
+    justify-content: flex-start;
+   
+  }
+  &__humburger{
+    position: sticky;
+    top: 0;
+    display: none;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    min-height: 40px;
+    background: $gradient;
+    z-index: 10000;
+    .line{
+      width: 40px;
+      height: 4px;
+      background: white;
+      position: relative;
+      &::before, &::after{
+        content: '';
+        width: 100%;
+        height: 4px;
+        background: white;
+        position: absolute;
+      }
+      &::before{
+        top: -8px;
+      }
+      &::after{
+        top: 8px;
+      }
+    }
+  }
+  &__inner {
+    padding-left: 25px;
+    padding-right: 110px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   
+  }
+
+  &__logo {
+    margin-right: 10px;
+    width: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__nav {
+    width: 75%;
+   
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+  
+  }
+
+  &__nav-link {
+    font-size: 24px;
+    color: #ffffff;
+    text-decoration: none;
+    
+  }
+
+  &__nav-item {
+    border-bottom: 2px solid #ffffff;
+    margin-right: 70px;
+    padding-bottom: 5px;
+    &:last-child{
+      margin-right: 0;
+    }
+  }
+}
+
+

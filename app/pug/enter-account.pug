@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+html(lang="en")
+  head
+    include template/_head
+  body
+    include template/_header
+
+    main.main
+      section.authorization
+        .authorization__body
+          .authorization__left
+            img(src="img/enter-account/man.png", alt="")
+            span.authorization__img-text Оптимизируй расходы от 8%
+          .authorization_login-in-form
+            form.login-in(action="")
+              .login-in__logo
+                img(src="img/enter-account/logo_top.png", alt="")
+              .login-in__enter-acc
+                input.login-in__input(type="text", name="login" placeholder="Логин")
+                input.login-in__input(type="password", name="pass" placeholder="Пароль")
+                button.login-in__btn(type="submit") Войти
+              .login-in__footer
+                .login-in__footer-info
+                  span 8 (800) 333-19-38
+                  span ©timebook 2012 - 2020
+                .login-in__footer-logo
+                  img(src="img/enter-account/sk_footer_logo.jpg", alt="")
+
+
+              
+
+    include template/_footer
+    script(src="js/header_script.js")

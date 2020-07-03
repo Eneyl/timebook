@@ -1,0 +1,83 @@
+
+.company-info {
+
+		&__body {
+      background:  url('../img/about-company/Группа 1.png') no-repeat;
+		}
+
+		&__row {
+      display: flex;
+      justify-content: start;
+			&_first {
+        padding-top: 50px;
+			}
+
+			&_two {
+        padding-top: 45px;
+			}
+
+			&_thrid {
+        .company-info__text{
+          width: 58%;
+          padding-right: 30px;
+        }
+        .company-info__img{
+          width: 42%;
+        }
+			}
+
+			&_adress {
+        div{
+          width: 50%;
+          margin-right: 20px;
+        }
+        padding-bottom: 100px;
+			}
+		}
+
+		&__text {
+      text-align: justify;
+      width: 45%;
+		}
+
+		&__title {
+      font-size: 46px;
+      margin-bottom: 20px;
+		}
+
+		&__parah {
+      font-size: 24px;
+      margin-bottom: 2em;
+		}
+
+		&__img {
+      width: 55%;
+      display: flex;
+      justify-content: center;
+      align-items: start;
+      padding: 15px;
+      
+      img{
+        border-radius: 20px
+      }
+      
+		}
+
+		&__adress-title {
+      font-size: 30px;
+		}
+
+		ul[class=company-info__adress-list] {
+      
+      list-style: disc;
+      padding-left: 30px;
+		}
+
+		&__adress-item {
+      color: #04fa98;
+      font-size: 30px;
+      span{
+        color: black;
+      }
+		}
+}

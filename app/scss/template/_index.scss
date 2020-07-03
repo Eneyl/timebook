@@ -1,0 +1,164 @@
+
+.main-screen {
+
+	&__body {
+		background: url('../img/bg-main.png') no-repeat;
+		background-position: 0px -100px;
+		
+	}
+
+	&__inner {
+		padding-bottom: 150px;
+		padding-left: 72px;
+		display: flex;
+	}
+
+	&__text {
+		width: 50%;
+		padding-top: 90px;
+		color: rgb(31, 31, 31)
+		
+	}
+
+	&__title {
+		font-size: 48px;
+		line-height: 1.3;
+		font-family: 'PT Sans';
+		font-weight: bold;
+	}
+
+	&__descr {
+		padding-top: 76px;
+		font-size: 30px;
+
+	}
+
+	&__get-call {
+		@include button-reset;
+		font-size: 24px;
+		padding: 4px 60px;
+		background: $btn-color;
+		margin-top: 70px;
+		border-radius: 15px;
+		color: #ffffff;
+	}
+
+	&__image {
+		padding-top: 20px;
+	}
+}
+
+.capability {
+
+	&__inner {
+		padding-top: 30px;
+	}
+
+	&__title {
+		text-align: center;
+		font-weight: bold;
+		font-size: 48px;
+		color: $dark-blue;
+	}
+
+	&__item-title{
+		font-size: 30px;
+		font-weight: bold;
+		color: $dark-blue;
+	}
+
+	&__list {
+		display: flex;
+		justify-content: space-evenly;
+		flex-wrap: wrap;
+		padding-top: 60px;
+	}
+	
+
+	&__list-item {
+		display: flex;
+		width: 30%;
+		
+	}
+
+	&__item-text{
+		padding-left: 35px;
+	}
+
+	&__list-icon {
+		width: 30%;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+
+	&__descr {
+		padding-top: 10px;
+		font-size: 24px;
+		color: #828284;
+	}
+
+	&__tab-body {
+		display: flex;
+		padding-top: 147px;
+	}
+
+	&__tab-switches {
+		width: 35%;
+	}
+
+	&__tab-title {
+		padding: 10px 73px;
+		font-size: 24px;
+		color: $dark-blue;
+		cursor: pointer;
+		transition: 0.2s ease-in;
+		&:hover{
+			background: $tab-active;
+		}
+		&_active{
+			background: $tab-active;
+		}
+	}
+
+	&__tab-content {
+		width: 65%;
+		padding-left: 190px;
+		justify-content: center;
+		align-items: center;
+		display: flex;
+		&_show{
+			display: flex;
+		}
+		&_hide{
+			display: none;
+		}
+	
+	}
+}
+.our-clients {
+
+	&__inner {
+		padding-top: 93px;
+		padding-bottom: 80px;
+	}
+
+	&__title {
+		font-size: 48px;
+		color: $dark-blue;
+		text-align: center;
+	}
+
+	&__list {
+		padding-top: 60px;
+		display: flex;
+		align-items: center;
+		justify-content: space-evenly;
+		flex-wrap: wrap;
+		
+	}
+
+	&__list-item {
+		max-width: 130px;
+	}
+}
